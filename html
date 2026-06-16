@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Sustentável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌱 Agro Sustentável</h1>
+
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#praticas">Práticas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Agronegócio com responsabilidade ambiental</h2>
+    <p>Produzindo hoje sem comprometer o amanhã</p>
+    <button onclick="mostrarMensagem()">Saiba mais</button>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre o projeto</h2>
+    <p>
+      O agronegócio sustentável busca equilibrar produção, meio ambiente e responsabilidade social,
+      utilizando tecnologia e boas práticas agrícolas.
+    </p>
+  </section>
+
+  <section id="praticas">
+    <h2>Práticas sustentáveis</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🌾 Plantio Direto</h3>
+        <p>Reduz o impacto no solo e melhora a retenção de água.</p>
+      </div>
+
+      <div class="card">
+        <h3>💧 Irrigação Inteligente</h3>
+        <p>Uso eficiente da água com sensores e tecnologia.</p>
+      </div>
+
+      <div class="card">
+        <h3>🌿 Rotação de culturas</h3>
+        <p>Melhora a fertilidade do solo e reduz pragas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Envie uma mensagem para saber mais sobre o projeto.</p>
+
+    <form onsubmit="enviarFormulario(event)">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Agro Sustentável - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
